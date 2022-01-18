@@ -29,6 +29,17 @@ $ git clone https://github.com/JuliRash/mpharma-th.git
 $ cd mpharma-th
 ```
 
+<p> Get the application ready to build</p>
+
+```
+docker run --rm \
+    -u "$(id -u):$(id -g)" \
+    -v $(pwd):/var/www/html \
+    -w /var/www/html \
+    laravelsail/php81-composer:latest \
+    composer install --ignore-platform-reqs
+```
+
 <p >Use Sail(Docker) To build the application</p>
 
 ```
