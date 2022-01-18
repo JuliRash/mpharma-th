@@ -11,23 +11,38 @@
 
 This is a basic API that does Create, Read, Update, Delete actions and uploads csv that uses a queue and sends an alert after the upload is complete
 
-
 ### Requirements
 
-- [Docker](https://www.docker.com/get-started)
+-   [Docker](https://www.docker.com/get-started)
 
-### Installation 
+### Installation
 
-```bash
-$ git clone 
+<p>Clone the Repository </p>
+
 ```
+$ git clone https://github.com/JuliRash/mpharma-th.git
 ```
-$ cd 
+
+<p>Navigate to the repository directory.</p>
+
 ```
+$ cd mpharma-th
+```
+
+<p >Use Sail(Docker) To build the application</p>
+
 ```
 $ ./vendor/bin/sail up -d
 ```
+
+<p>Run Migration and Seed Demo data</p>
+
 ```
 $ ./vendor/bin/sail migrate --seed
 ```
-$ 
+
+<p> Run The default queue this is useful to queue the </p>
+
+```
+$ ./vendor/bin/sail artisan queue:work --timeout=0
+```
