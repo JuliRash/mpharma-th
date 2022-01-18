@@ -40,8 +40,16 @@ docker run --rm \
     composer install --ignore-platform-reqs
 ```
 
+Copy The ENV example file
+
 ```
 cp .env.example .env
+```
+
+Clear the Cache
+
+```
+php artisan config:cache
 ```
 
 <p >Use Sail(Docker) To build the application</p>
@@ -53,7 +61,7 @@ $ ./vendor/bin/sail up -d
 <p>Run Migration and Seed Demo data</p>
 
 ```
-$ ./vendor/bin/sail migrate --seed
+$ ./vendor/bin/sail  artisan migrate --seed
 ```
 
 <p> Run The default queue this is useful to queue the </p>
