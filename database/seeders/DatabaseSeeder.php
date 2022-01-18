@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Diagnosis;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -13,6 +14,9 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+        \App\Models\Diagnosis::truncate();
+        \App\Models\Diagnosis::factory()
+            ->count(100)
+            ->create();
     }
 }
