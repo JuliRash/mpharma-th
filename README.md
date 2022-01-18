@@ -46,3 +46,7 @@ $ ./vendor/bin/sail migrate --seed
 ```
 $ ./vendor/bin/sail artisan queue:work --timeout=0
 ```
+
+Documentation: https://documenter.getpostman.com/view/6597817/UVXnFZGE
+
+Postman Collection: https://www.getpostman.com/collections/34d3ce33533e750956e9
