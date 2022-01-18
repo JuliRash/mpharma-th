@@ -49,7 +49,7 @@ class DiagnosisController extends Controller
         return response()->json([
             'message' => 'diagnosis added successfully',
             'data' => $diagnosis,
-        ], 200);
+        ], 201);
     }
 
     /**
