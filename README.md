@@ -49,7 +49,7 @@ cp .env.example .env
 Clear the Cache
 
 ```
-php artisan config:cache
+php artisan config:cache && php artisan optimize:clear
 ```
 
 <p >Use Sail(Docker) To build the application</p>
