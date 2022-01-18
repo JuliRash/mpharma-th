@@ -40,6 +40,10 @@ docker run --rm \
     composer install --ignore-platform-reqs
 ```
 
+```
+cp .env.example .env
+```
+
 <p >Use Sail(Docker) To build the application</p>
 
 ```
